@@ -18,6 +18,7 @@ vesuvioMenu.push(ziti);
 
 function createMenuItemDiv(menuItem){
     const menuItemContainer = document.createElement("div");
+    menuItemContainer.classList.add("menuItem");
 
     const itemName = document.createElement("div");
     itemName.classList.add("menuItemName");

@@ -29,3 +29,5 @@ aboutButton.addEventListener("click", () => {
     clearContent();
     showAbout();
 });
+
+showHome();
