@@ -7,13 +7,13 @@ export function showHome(){
 
     const hoursDiv = document.createElement("div");
     hoursDiv.classList.add("hours");
-    hoursDiv.textContent = `Monday: 11am - 11pm
-                            Tuesday: 11am - 11pm
-                            Wednesday: 11am - 11pm
-                            Thursaday: 11am - 11pm
-                            Friday: 11am - 1am
-                            Saturday: 11am - 1am
-                            Sunday: 12pm - 10pm`
+    hoursDiv.innerHTML = `Monday: 11am - 11pm<br>
+                      Tuesday: 11am - 11pm<br>
+                      Wednesday: 11am - 11pm<br>
+                      Thursday: 11am - 11pm<br>
+                      Friday: 11am - 1am<br>
+                      Saturday: 11am - 1am<br>
+                      Sunday: 12pm - 10pm`;
 
     content.appendChild(homeTextDiv);
     content.appendChild(hoursDiv);

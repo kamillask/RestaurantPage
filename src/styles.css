@@ -13,7 +13,7 @@ body, html {
 
 body {
   display: grid;
-  grid-template-rows: 33vh 10vh;
+  grid-template-rows: 33vh 7vh;
 }
   
 .banner {
@@ -31,33 +31,45 @@ body {
 }
 
 nav {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: red;
+  font-size: 30px;
 }
 
-/* "#content div" selects all divs in content */
-#content div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: black;
+nav button { 
+  border: none;
+  color: white;
+  background-color: red;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1em;
+}
+
+nav button:hover {
+  color: tan
 }
 
 #content {
   width: 66vw;
-  height: 100%;
-  /* this isnt being centered bc of vw, it cant center bc it doesnt have a container */
+  /* why did margin 0 auto work but now flex centering? */
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   background-image: url("./images/white-parchment-paper_53876-92954.png");
   background-size: cover;
   border-radius: 25px;
   padding: 10px;
 }
 
-.menuItem {
+.menuItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 10px;
 }
 
@@ -67,19 +79,4 @@ nav {
   color: red;
 }
 
-nav {
-  background-color: red;
-  height: 40px;
-}
 
-button { 
-  border: none;
-  color: white;
-  background-color: red;
-  font-family: 'Brush Script MT', cursive;
-  font-size: 1em;
-}
-
-button:hover {
-  color: tan
-}
