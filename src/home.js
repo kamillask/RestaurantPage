@@ -1,5 +1,11 @@
+import vesuvio from "./images/vesuvio.png";
+
 export function showHome(){
     const content = document.getElementById("content");
+
+    const homeImage = document.createElement("img");
+    homeImage.src = vesuvio;
+    homeImage.style.width = "20vw";
 
     const homeTextDiv = document.createElement("div");
     homeTextDiv.classList.add("homeText");
@@ -15,6 +21,7 @@ export function showHome(){
                       Saturday: 11am - 1am<br>
                       Sunday: 12pm - 10pm`;
 
+    content.appendChild(homeImage);
     content.appendChild(homeTextDiv);
     content.appendChild(hoursDiv);
 }
