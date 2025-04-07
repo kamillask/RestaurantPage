@@ -21,7 +21,8 @@ export function showHome(){
                       Saturday: 11am - 1am<br>
                       Sunday: 12pm - 10pm`;
 
-    content.appendChild(homeImage);
+
     content.appendChild(homeTextDiv);
+    content.appendChild(homeImage);
     content.appendChild(hoursDiv);
 }

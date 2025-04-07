@@ -13,7 +13,7 @@ let quail = new Menu("Quail, a la Bucco", "Baby quail stuffed with fennel sausag
 vesuvioMenu.push(quail);
 let gabagool = new Menu("Gabagool", "Gabagool? Over hereeeee!", "$4/lb");
 vesuvioMenu.push(gabagool);
-let ziti = new Menu("Ziti", "So what, no flippin ziti now? Oh!", "idk");
+let ziti = new Menu("Ziti", "So what, no flippin ziti now? Oh!", "$13");
 vesuvioMenu.push(ziti);
 
 function createMenuItemDiv(menuItem){
